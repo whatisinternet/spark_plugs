@@ -1,4 +1,2 @@
-module SparkPlugs
-  class ApplicationController < ActionController::Base
-  end
+class SparkPlugs::ApplicationController < ApplicationController
 end
