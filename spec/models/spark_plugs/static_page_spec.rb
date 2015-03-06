@@ -1,3 +1,15 @@
+# == Schema Information
+#
+# Table name: spark_plugs_static_pages
+#
+#  id         :integer          not null, primary key
+#  page       :string           not null
+#  title      :string           not null
+#  content    :text
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 require 'rails_helper'
 
 module SparkPlugs

@@ -4,13 +4,14 @@ module SparkPlugs
   class StaticPagesController < ApplicationController
     before_action :set_static_page, only: [:show, :edit, :update, :destroy]
 
-    # GET /static_pages
-    def index
-      @static_pages = StaticPage.all
-    end
-
     # GET /static_pages/1
     def show
+      page = StaticPage.find_by(page: params[:page])
+      if page
+        @static_page = page
+      else
+        raise ActionController::RoutingError.new("That page could not be found by SparkPlugs")
+      end
     end
 
     # GET /static_pages/new
