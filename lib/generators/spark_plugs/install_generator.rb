@@ -7,7 +7,8 @@ module SparkPlugs
     argument :_namespace, type: :string, required: false, desc: 'SparkPlug namespace'
 
     def install
-      namespace = ask_for("Where would you like to mount spark_plugs?", 'admin', _namespace)
+      namespace = "pages"
+      namespace ||= ask("Where would you like to mount spark_plugs? [pages] is default")
       route("mount SparkPlugs::Engine => '/#{namespace}", as: 'spark_plugs')
       rake("db:migrate")
       #template 'initializer.erb', 'config/initializers/spark_plugs.rb'
