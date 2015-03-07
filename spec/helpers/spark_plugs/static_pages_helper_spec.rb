@@ -12,6 +12,14 @@ require 'rails_helper'
 # end
 module SparkPlugs
   RSpec.describe StaticPagesHelper, type: :helper do
-#    pending "add some examples to (or delete) #{__FILE__}"
+    before :each do
+      @page = FactoryGirl.create(:spark_plugs_static_page)
+    end
+    describe "set_title" do
+      it "sets the @title variable for compatibility" do
+        assign(:static_page, @page)
+        expect(helper.set_title).to eq(@page.title)
+      end
+    end
   end
 end
