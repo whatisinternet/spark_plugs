@@ -2,7 +2,7 @@ require_dependency "spark_plugs/application_controller"
 
 module SparkPlugs
   class StaticPagesController < ApplicationController
-    before_action :set_static_page, only: [:show, :edit, :update, :destroy]
+    before_action :set_static_page, only: [:edit, :update, :destroy]
 
     # GET /static_pages/1
     def show
