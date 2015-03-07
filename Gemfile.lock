@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    spark_plugs (0.0.2)
+    spark_plugs (0.0.5)
       rails (~> 4.2.0)
 
 GEM

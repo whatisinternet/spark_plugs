@@ -10,8 +10,6 @@ module SparkPlugs
       if page
         @static_page = page
         expires_in 2.hours, :public => true
-      else
-        raise ActionController::RoutingError.new("That page could not be found by SparkPlugs")
       end
     end
 
