@@ -24,6 +24,7 @@ module SparkPlugs
     routes { SparkPlugs::Engine.routes }
 
     before :all do
+      Rails.cache.clear
       @static_page = FactoryGirl.create :spark_plugs_static_page
     end
 
