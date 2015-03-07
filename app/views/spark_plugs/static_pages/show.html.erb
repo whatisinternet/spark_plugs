@@ -1,6 +1,4 @@
-<% cache(cache_key_for_static_page) do%>
-  <title>  <%= cache(@static_page.title) %></title>
+  <title>  <%= @static_page.title %></title>
   <div id="static_content">
-    <%= cache(@static_page.content) %>
+    <%= @static_page.content %>
   </div>
-<% end  %>
