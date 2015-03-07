@@ -6,9 +6,10 @@ module SparkPlugs
 
     # GET /static_pages/1
     def show
-      page = StaticPage.find_by(page: params[:page])
+      page = StaticPage.get_page(params[:page])
       if page
         @static_page = page
+        expires_in 2.hours, :public => true
       else
         raise ActionController::RoutingError.new("That page could not be found by SparkPlugs")
       end

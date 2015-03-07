@@ -48,6 +48,11 @@ module SparkPlugs
         get :show, {:id => @static_page.to_param, page: @static_page.page.to_param}, valid_session
         expect(assigns(:static_page)).to eq(@static_page)
       end
+      it "raises an error on invalid data" do
+        expect {
+          get :show, {id: @static_page.to_param, page: 'invalidinvalid'}
+        }.to raise_exception
+      end
     end
 
     describe "GET #new" do

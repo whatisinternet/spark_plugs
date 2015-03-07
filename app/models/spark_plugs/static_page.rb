@@ -19,5 +19,11 @@ module SparkPlugs
     validates :title, length: { minimum: 5  }
     validates :content, presence: true
     validates :content, length: { minimum: 5  }
+
+    def self.get_page(resource)
+      Rails.cache.fetch("get_page", expires_in: 1.hour) do
+        StaticPage.find_by_page(resource.to_s)
+      end
+    end
   end
 end
