@@ -21,13 +21,13 @@ Add this line to your application's Gemfile:
 And then execute:
 
 ```shell
-  bundle
+  bundle install
 ```
 
 Then generate
 
 ```shell
-  rails generate spark_plugs:install:migrate
+  rails generate spark_plugs:install
 ```
 
 
