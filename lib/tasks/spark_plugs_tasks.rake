@@ -12,4 +12,9 @@ namespace :spark_plugs do
   task :uninstall do
     system 'rails g spark_plugs:uninstall'
   end
+
+  desc 'Generate spark_plug views'
+  task :views do
+    system 'rails g spark_plugs:views'
+  end
 end
