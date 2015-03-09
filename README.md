@@ -24,7 +24,7 @@ And then execute:
   bundle install
 ```
 
-Then generate
+Then install
 
 ```shell
   rails generate spark_plugs:install
