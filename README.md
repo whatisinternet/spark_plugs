@@ -6,9 +6,9 @@ Version](https://badge.fury.io/rb/spark_plugs.svg)](http://badge.fury.io/rb/spar
 Climate](https://codeclimate.com/github/whatisinternet/spark_plugs/badges/gpa.svg)](https://codeclimate.com/github/whatisinternet/spark_plugs)
 [![Test
 Coverage](https://codeclimate.com/github/whatisinternet/spark_plugs/badges/coverage.svg)](https://codeclimate.com/github/whatisinternet/spark_plugs)
-# spark_plugs
+# Spark Plugs
 
-Provides slug based static pages for your rails app.
+A Rails engine for semi-static pages.
 
 ## Installation
 
@@ -28,6 +28,12 @@ Then install
 
 ```shell
   rails generate spark_plugs:install
+```
+
+If you would like to customize the views:
+
+```shell
+  rails generate spark_plugs:views
 ```
 
 
