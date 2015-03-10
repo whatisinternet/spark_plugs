@@ -11,8 +11,8 @@ gemfile:
 cache: bundler
 
 before_script:
-  -mkdir /home/travis/build/whatisinternet/spark_plugs/spec/dummy/tmp
-  -mkdir /home/travis/build/whatisinternet/spark_plugs/spec/dummy/tmp/cache
+  - mkdir /home/travis/build/whatisinternet/spark_plugs/spec/dummy/tmp
+  - mkdir /home/travis/build/whatisinternet/spark_plugs/spec/dummy/tmp/cache
 
 script:
   - bundle install
