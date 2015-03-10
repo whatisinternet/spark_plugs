@@ -5,6 +5,12 @@ source 'https://rubygems.org'
 # development dependencies will be added by default to the :development group.
 gemspec
 
+gem "rails", "4.2.0"
+
+platforms :ruby do
+  gem "sqlite3"
+end
+
 group :test do
   gem 'faker'
   gem 'shoulda-matchers'
