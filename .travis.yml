@@ -9,4 +9,4 @@ gemfile:
 
 cache: bundler
 
-script: "bundle exec rspec"
+script: "rake db:migrate RAILS_ENV=test && bundle exec rspec"
