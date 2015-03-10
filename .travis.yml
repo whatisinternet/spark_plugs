@@ -9,4 +9,4 @@ gemfile:
 
 cache: bundler
 
-script: "bundle install && rake db:migrate RAILS_ENV=test && bundle exec rspec"
+script: "mkdir /home/travis/build/whatisinternet/spark_plugs/spec/dummy/tmp/cache && bundle install && rake db:migrate RAILS_ENV=test && bundle exec rspec"
