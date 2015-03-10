@@ -19,5 +19,5 @@ Gem::Specification.new do |s|
   s.required_ruby_version = ">= 2.1.5"
 
   s.add_dependency "railties", ">= 4.0", "<5"
-
+  s.add_development_dependency 'codeclimate-test-reporter','~> 0.4'
 end
