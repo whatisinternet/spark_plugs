@@ -12,3 +12,11 @@ script:
 - bundle install
 - rake db:migrate RAILS_ENV=test
 - bundle exec rspec
+deploy:
+  provider: rubygems
+  api_key:
+    secure: DDX0in/RU35B4ijmV0KjmVOGnzA4QWbrIIdKkxAoKuTan/4nLnaeazlS5b4MaWeVSLyMmX7XRfJPn0rRehnrYEFbTVME8vgNarbOV7hJmGMUXgN6JoPIfTQDaIjHxXM2gCfwnIOGqqQVFM/mbkz8xYTz2Mipi2YNtqaP6/1EoKo=
+  gem: spark_plugs
+  on:
+    tags: true
+    repo: whatisinternet/spark_plugs
