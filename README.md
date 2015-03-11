@@ -30,7 +30,7 @@ Then install
   rails generate spark_plugs:install
 ```
 
-If you would like to customize the views:
+If you would like to customize the view:
 
 ```shell
   rails generate spark_plugs:views
