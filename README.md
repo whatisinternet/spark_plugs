@@ -8,7 +8,7 @@ Climate](https://codeclimate.com/github/whatisinternet/spark_plugs/badges/gpa.sv
 Coverage](https://codeclimate.com/github/whatisinternet/spark_plugs/badges/coverage.svg)](https://codeclimate.com/github/whatisinternet/spark_plugs)
 # Spark Plugs
 
-A Rails engine for semi-static pages.
+A Rails engine for semi-static pages. This project is still a work in progress.
 
 ## Installation
 
