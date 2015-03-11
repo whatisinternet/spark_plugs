@@ -37,7 +37,14 @@ If you would like to customize the view:
 ```
 
 
-## Usage
+## Notes:
+
+The master branch does not provide controller actions or views for creating or
+editing static pages. I have assumed that you've created an administration
+interface or are using a gem like rails_admin to manage these pages.
+
+If you wish to use the default views please use the legacy-full-controller branch or fork that branch.
+
 
 ## Contributing
 

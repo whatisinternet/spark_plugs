@@ -1,19 +1,21 @@
 language: ruby
-
 rvm:
 - 2.2.1
 - 2.2.0
-
 gemfile:
-  - Gemfile
-
+- Gemfile
 cache: bundler
-
 before_script:
-  - mkdir /home/travis/build/whatisinternet/spark_plugs/spec/dummy/tmp
-  - mkdir /home/travis/build/whatisinternet/spark_plugs/spec/dummy/tmp/cache
-
+- mkdir /home/travis/build/whatisinternet/spark_plugs/spec/dummy/tmp
+- mkdir /home/travis/build/whatisinternet/spark_plugs/spec/dummy/tmp/cache
 script:
-  - bundle install
-  - rake db:migrate RAILS_ENV=test
-  - bundle exec rspec
+- bundle install
+- rake db:migrate RAILS_ENV=test
+- bundle exec rspec
+deploy:
+  provider: rubygems
+  api_key:
+    secure: M6u1isi3kJCvUr5zP6W47QxsV4y+fvoQWEHL5y67snR/F08PcPv/wDgCygfPkmElF7XMTeiA9i+KIYMwPgMi44juB1GcNBh8bZNS7l7uHFdYuUNxt0jTtMAhjuIjD2CHr3ikwsq7Rm/dfL2AF0EYKxfUKKTmc8ZLbD8nRZciKzE=
+  gem: spark_plugs
+  on:
+    repo: whatisinternet/spark_plugs
