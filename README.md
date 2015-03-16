@@ -36,6 +36,18 @@ If you would like to customize the view:
   rails generate spark_plugs:views
 ```
 
+## Extending the controller
+Just include the SparkPlugs SemiStatic concern. Big thanks to
+[thoughtbot/high_voltage](https://githib.com/thoughtbot/high_voltage).
+
+```ruby
+  #app/controllers/static_pages_controller
+  class StaticPagesController < ApplicationController
+    include SparkPlugs::SemiStatic
+
+    # Authenticate etc.
+  end
+````
 
 ## Notes:
 
